@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  background-image: url("../assets/iml-01743-98625.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 939px;
+  object-fit: cover;
+  z-index: -999;
+  margin-bottom: 40px;
+ 
+
+}
+
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 35px 0 35px;
+  height: 75px;
+
+}
+
+.header__description {}
+
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  line-height: normal;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/*---Header about---*/
+.header__about {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: calc(100% - 75px);
+  opacity: 0.9;
+
+
+}
+
+.header__title {
+  color: white;
+  font-size: 60px;
+  font-family: raleway-semibold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+
+}
+
+.header__subtitle {
+  color: white;
+  font-size: 30px;
+}

@@ -1,0 +1,23 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color:rgb( 38, 38, 38) ;
+  height:100vh;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=_base.css.map */

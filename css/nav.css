@@ -1,0 +1,52 @@
+.nav {
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.nav__list {
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.nav__item {
+    list-style: none;
+    width: 71px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+
+
+
+}
+
+.nav__item--select {
+    border: 1px solid white;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    width: 80px;
+    height: 40px;
+    padding-left: 20px;
+    margin-left: 40px;
+
+
+}
+
+.nav__item a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+
+}
