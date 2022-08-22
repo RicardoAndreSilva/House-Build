@@ -1,4 +1,4 @@
-.commitment {
+.service {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 287px;
@@ -7,7 +7,7 @@
 
 }
 
-.commitment__first {
+.service__first {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
     
 }
 
-.commitment__second {
+.service__second {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@
 
 }
 
-.commitment__third {
+.service__third {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
 
 }
 
-.commitment_fourth {
+.service__fourth {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,14 +46,14 @@
 
 }
 
-.commitment__text {
+.service__text {
     color: white;
     line-height: 1.4em;
     font-size: 18px;
     text-align: center;
 
 }
-.commitment__text::first-letter{
+.service__text::first-letter{
     text-transform: capitalize;
 }
 
