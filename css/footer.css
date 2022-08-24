@@ -1,26 +1,23 @@
 .footer__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 665px;
+    max-height: 665px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .footer__content {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
-
-
-
-
 
 }
 
 .footer__items {
     display: flex;
-    margin-top: 20px;
+    margin-top: 95px;
     flex-direction: column;
-    max-width: 350px;
-
+    max-width: 450px;
+    
 
 }
 
@@ -29,7 +26,8 @@
     color: rgb(154, 138, 120);
     font-size: 40px;
     text-transform: capitalize;
-   
+    margin-top: 0;
+
 }
 
 .footer__adress,
@@ -38,6 +36,7 @@
 .footer__phone {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
@@ -52,11 +51,153 @@
     flex-direction: row;
 }
 
-
-
-
-
 svg {
     width: 30px;
     height: 30px;
+}
+
+/*---Foote Middle---*/
+.input__your--name {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    display: block;
+    color: rgb(154, 138, 120);
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 4px;
+
+
+}
+
+.input__your--name input {
+    width: 182px;
+    height: 44px;
+
+}
+
+input {
+    border: 1px solid rgb(38, 38, 38);
+    background-color: rgb(38, 38, 38);
+    border-bottom: 1px solid rgb(154, 138, 120);
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.input__name {
+    margin-right: 10px;
+}
+
+.input__mail {
+    width: 377px;
+    height: 44px;
+
+}
+
+.input__extra {
+    display: flex;
+    flex-direction: row;
+}
+
+.input__extra input {
+    width: 182px;
+    height: 44px;
+
+}
+
+.input__adress {
+    margin-left: 10px;
+}
+
+.button__submit {
+    text-align: center;
+
+}
+
+.button__send {
+    width: 377px;
+    height: 45px;
+    background-color: rgb(38, 38, 38);
+    color: rgb(154, 138, 120);
+    border: none;
+    text-transform: capitalize;
+    border: 1px solid rgb(154, 138, 120);
+}
+
+.button__send:hover {
+    background-color: rgb(187, 165, 139);
+    color: black;
+}
+
+input[type="text"]:hover {
+    border-bottom: 2px solid white;
+}
+
+input[type="text"]:active {
+    border-bottom: 2px solid white;
+}
+
+input[type="email"]:hover {
+    outline: none;
+}
+
+input[type="number"]:hover {
+    border-bottom: 2px solid white;
+}
+
+input:active {
+    border: none;
+}
+
+/*--footer Right---*/
+
+.footer__pages {
+    margin-top: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 52px;
+}
+
+.footer__page {
+    list-style: none;
+    padding: 10px;
+
+
+}
+
+.footer__link {
+    color: rgb(154, 138, 120);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.footer__link--phone {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.footer__link--call {
+    width: 129px;
+    height: 40px;
+    color: rgb(38, 38, 38);
+    background-color: rgb(154, 138, 120);
+    box-shadow: (none, 0 1px 4px rgba(0, 0, 0, .6));
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link--call:hover {
+    background-color: rgb(187, 165, 139);
 }

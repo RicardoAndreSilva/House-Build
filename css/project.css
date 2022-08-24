@@ -1,15 +1,7 @@
-.project{
+.project {
     margin-bottom: 60px;
+    overflow: visible;
 }
-.project__area {
-    grid-template-columns: 375px 375px 1fr;
-    max-height: 980px;
-    display: grid;
-    gap: 20px;
-
-}
-
-
 
 .project__name {
     display: block;
@@ -26,32 +18,70 @@
     text-transform: capitalize;
 }
 
+.project__area {
+    grid-template-columns: 1fr 1fr 2fr;
+    height: auto;
+    display: grid;
+    gap: 20px;
+
+}
+
+.project__gallery {
+    width: 477px;
+    display: flex;
+    align-items: center;
+
+}
+
 .project__left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    max-width: 414px;
+
+
+
+}
+
+.project__left--1 {
+    height: 414px;
+
+
+
+}
+
+.project__left--2 {
+    height: 372px;
+    margin-top: 12px;
+
+
 
 
 }
 
 .project__middle {
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project__middle--1 {
-    margin-bottom: 10px;
+    height: 372px;
+    margin-bottom: 12px;
+
+}
+
+.project__middle--2 {
+    height: 414px;
+
 }
 
 
 
 .project__right {
     border: 1px solid rgb(107, 94, 78);
-    position: relative;
+    cursor: pointer;
+    border: none;
 
 }
 
@@ -62,15 +92,15 @@
 
 .project__text {
     color: black;
-    z-index: 1;
-    position: absolute;
     top: 50%;
-    text-align: center;
     width: 100%;
-    height: 100%;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
     font-size: 22px;
     font-weight: 600;
-    visibility: idden;
+    visibility: hidden;
 
 }
 
@@ -82,10 +112,11 @@
 
 .project__position {
     position: relative;
+    cursor: pointer;
 
 }
 
-.project__tet:hover {
+.project__text:hover {
     visibility: visible;
 }
 
@@ -94,35 +125,38 @@
 }
 
 .project__more {
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
+    align-items: center;
+}
+
+
+.project__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
+    height: 60px;
+    width: 240px;
+    background-color: rgb(154, 138, 120);
+    margin-top: 20px;
+    box-shadow: rgb(none, 0 1px 4px rgba(0, 0, 0, .6));
+    cursor: pointer;
+
 }
 
-.project__button {
+.project__button--link {
     font-size: 14px;
     text-decoration: none;
     color: black;
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
-}
-
-.project__extra {
-  
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 60px;
-    width: 240px;
-    background-color: rgb(154, 138, 120);;
-    margin-top: 20px;
-    box-shadow: rgb(none, 0 1px 4px rgba(0, 0, 0, .6));
 }
 
-.project__extra:hover {
+
+.project__button:hover {
     background-color: rgb(187, 165, 139);
 
 }

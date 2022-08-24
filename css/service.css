@@ -1,65 +1,104 @@
 .service {
+    margin-top: 40px;
+
+}
+
+.service__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 287px;
+    grid-template-columns: 25% 25% 25% 25%;
 
+}
+
+.service__area {
+    height: 422px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(154, 138, 120);
+    width: 100%;
 
 
 }
 
-.service__first {
+.service__area:first-child {
+    height: 422px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(107, 94, 78);
-    border-top: none;
-    border-right: none;
-    
-}
-
-.service__second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(107, 94, 78);
-    border-top: none;
-    border-right: none;
+    background-color: rgb(154, 138, 120);
 
 }
 
-.service__third {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(107, 94, 78);
-    border-top: none;
-    border-right: none;
+.service__title--h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 10px;
 
 }
 
-.service__fourth {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(107, 94, 78);
-    border-top: none;
 
+.service__items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 230px;
+    border: 1pxsolid red;
+}
+
+.service__title--h3 {
+    font-size: 30px;
+    color: rgb(154, 138, 120);
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.service__remove--space{
+    margin-bottom: 0;
 }
 
 .service__text {
+    font-size: 16px;
     color: white;
-    line-height: 1.4em;
-    font-size: 18px;
-    text-align: center;
+    line-height: 1.8em;
+}
+
+.service__img {
+    object-fit: cover;
+    object-position: 50% 50%;
 
 }
-.service__text::first-letter{
+
+.service__title {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
     text-transform: capitalize;
 }
 
-svg {
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    width:100%;
+.service__title--list {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
+
+.service__list {
+    color: white;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+
+.service__item {
+    padding-left: 30px;
+}
+
+
+.service__content {}
+
+.service__content {}
+
+.service__content {}
