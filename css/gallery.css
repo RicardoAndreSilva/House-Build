@@ -1,0 +1,25 @@
+.gallery__title{
+    text-transform: capitalize;
+    font-size:30px ;
+    color:rgb(154,138,120);
+    
+}
+.gallery__text{
+    font-size: 16px;
+    line-height: 1.8em;
+    color: white;
+    max-width: 619px;
+    padding-bottom: 10px;
+    
+}
+.gallery__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 820px;
+    
+}
+.gallery__area{}
+.gallery__gallery__middle--1{}
+.gallery__gallery__middle--2{}
+.gallery__right{}
+.gallery__title{}
