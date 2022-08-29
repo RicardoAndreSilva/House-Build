@@ -6,6 +6,9 @@
 .gallery__left{
     margin-bottom: 30px;
 }
+.gallery__content{
+    max-width: 90%;
+}
 
 .gallery__right--right{
     margin-top: 30px;

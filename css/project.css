@@ -27,7 +27,7 @@
 }
 
 .project__gallery {
-    width: 477px;
+    max-width: 90%;
     display: flex;
     align-items: center;
 
@@ -43,19 +43,10 @@
 
 }
 
-.project__left--1 {
-    height: 414px;
-
-
-
-}
+.project__left--1 {}
 
 .project__left--2 {
-    height: 372px;
     margin-top: 12px;
-
-
-
 
 }
 
@@ -66,15 +57,10 @@
 }
 
 .project__middle--1 {
-    height: 372px;
     margin-bottom: 12px;
 
 }
 
-.project__middle--2 {
-    height: 414px;
-
-}
 
 
 
@@ -107,6 +93,11 @@
 .project__img {
     border: 1px solid rgb(107, 94, 78);
     height: 100%;
+
+}
+
+.project__link {
+    display: inline-block;
 
 }
 
