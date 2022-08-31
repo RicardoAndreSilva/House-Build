@@ -58,3 +58,18 @@
   color: white;
   font-size: 30px;
 }
+
+@media only screen and (max-width: 900px) {
+
+  .header__container {
+    background-color: black;
+  }
+
+  .header__container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+    .header__description {
+     padding-left: 20px;
+    }
+}

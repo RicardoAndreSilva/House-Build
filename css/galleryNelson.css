@@ -13,11 +13,6 @@
 
 }
 
-.gallery__link {
-    display: inline-block;
-    
-
-}
 
 
 .gallery__text {
@@ -30,18 +25,28 @@
 
 }
 
+
 .gallery__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: auto;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 50px;
+
+
+}
+.gallery__area{
+    padding: 5px;
+}
+
+.gallery__link {
+    display: inline-block;
 
 
 }
 
 .gallery__span {
-   /* position: absolute;
+    /* position: absolute;
     visibility: hidden;
     top: 50%;
     width: 100%;

@@ -2,8 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: rgb(38, 38, 38);
   height: 100vh;
-  overflow-y: scroll;
-
+  
 }
 
 html {
@@ -26,4 +25,3 @@ img {
   display: block;
 }
 
-/*# sourceMappingURL=_base.css.map */

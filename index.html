@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/main.scss" />
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="icofont/icofont.min.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/nav.css" />
@@ -26,6 +27,7 @@
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/review.css" />
+  <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/footer.css" />
 </head>
 
@@ -39,6 +41,9 @@
         <span class="header__info">residenciais</span>
       </div>
       <nav class="nav">
+        
+          <i class="icofont-navigation-menu nav__mobile"></i>
+       
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html"> inicío </a>
@@ -54,6 +59,23 @@
           </li>
           <li class="nav__item nav__item--select">
             <span class="nav__link--span" href="projetos.html"> ligar </span>
+          </li>
+        </ul>
+        <ul class="nav__pages">
+          <li class="nav__page">
+            <a class="nav__link" href="#">
+              <img class="nav__img" src="assets/logo_facebook.webp" alt="Icon facebook">
+            </a>
+          </li>
+          <li class="nav__page">
+            <a class="nav__link" href="#">
+              <img class="nav__img" src="assets/logo__instagram.webp" alt="Icon instagram">
+            </a>
+          </li>
+          <li class="nav__page">
+            <a class="nav__link" href="#">
+              <img class="nav__img" src="assets/logo_media.webp" alt="Icon facebook">
+            </a>
           </li>
         </ul>
       </nav>
@@ -287,6 +309,27 @@
         </div>
       </div>
     </section>
+
+    <!--nav-->
+    <div class="nav">
+      <ul class="nav__pages">
+        <li class="nav__page">
+          <a class="nav__link" href="#">
+            <img class="nav__img" src="assets/logo_facebook.webp" alt="Icon facebook">
+          </a>
+        </li>
+        <li class="nav__page">
+          <a class="nav__link" href="#">
+            <img class="nav__img" src="assets/logo__instagram.webp" alt="Icon instagram">
+          </a>
+        </li>
+        <li class="nav__page">
+          <a class="nav__link" href="#">
+            <img class="nav__img" src="assets/logo_media.webp" alt="Icon facebook">
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <!--Footer-->
@@ -391,7 +434,7 @@
               <a class="footer__link" href="projetos.html">projetos</a>
             </li>
             <li class="footer__page">
-              <a class="footer__link" href="#contato">contato</a>
+              <a class="footer__link" id="contato" href="#contato">contato</a>
             </li>
           </ul>
           <div class="footer__link--phone">
