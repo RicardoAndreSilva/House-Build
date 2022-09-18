@@ -7,20 +7,21 @@
 .author__area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 404px;
+    min-height:404px;
 
 }
 
 .author__items {
-    border: 1px solid rgb(154,138,120);
+    border: 1px solid rgb(154, 138, 120);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
 }
 
 .author__items:first-child {
-    background-color: rgb(154,138,120);
+    background-color: rgb(154, 138, 120);
 }
 
 .author__text {
@@ -35,9 +36,19 @@
     max-width: 222px;
     text-decoration: none;
     font-size: 30px;
-cursor: pointer;
+    cursor: pointer;
 }
 
 .author__name::first-letter {
     text-transform: capitalize;
+}
+
+@media  screen and (max-width:900px) {
+
+    .author__area{
+        grid-template-columns: auto auto;
+        
+    }
+    
+    
 }

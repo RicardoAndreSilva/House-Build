@@ -17,6 +17,7 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="css/main.scss" />
+    <link rel="stylesheet" href="icofont/icofont.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -36,6 +37,7 @@
                 <span class="header__info">residenciais</span>
             </div>
             <nav class="nav">
+                <i class="icofont-navigation-menu nav__mobile"></i>
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="index.html"> inicío </a>
@@ -57,9 +59,9 @@
         </div>
     </header>
 
-    <main class="main container">
+    <main class="main">
         <!--section service-->
-        <section class="service">
+        <section class="service container">
             <div class="service__content">
                 <div class="service__area">
                     <div class="service__items">
@@ -167,7 +169,7 @@
 
     <!--Footer-->
     <footer>
-        <div class="footer__container container">
+        <div class="footer__container container ">
             <div class="footer__content">
                 <div class="footer__items">
                     <h4 class="footer__name">Fale conosco</h4>
@@ -194,12 +196,10 @@
                             <g>
                                 <path
                                     d="M180 149.032H20V50.968h160v98.064zm-154.839-5.161h149.677V56.129H25.161v87.742z"
-                                    fill="#9A8A78" data-color="1">
-                                </path>
+                                    fill="#9A8A78" data-color="1"></path>
                                 <path fill="#9A8A78"
                                     d="M100 118.79L20.968 55.565l3.226-4.033L100 112.177l75.806-60.645 3.226 4.033L100 118.79z"
-                                    data-color="1">
-                                </path>
+                                    data-color="1"></path>
                             </g>
                         </svg>
                         <span class="footer__text">info@meusite.com</span>
@@ -213,8 +213,7 @@
                             <g>
                                 <path
                                     d="M135.615 180H64.388c-7.399 0-13.42-6.018-13.42-13.417V33.42c0-7.651 5.769-13.42 13.42-13.42h71.227c7.399 0 13.417 6.021 13.417 13.42v133.163c0 7.399-6.018 13.417-13.417 13.417zM64.388 25.161c-4.786 0-8.259 3.473-8.259 8.259v133.163c0 4.94 4.269 8.256 8.259 8.256h71.227c4.94 0 8.256-4.269 8.256-8.256V33.42c0-4.94-4.269-8.259-8.256-8.259H64.388z"
-                                    fill="#9A8A78" data-color="1">
-                                </path>
+                                    fill="#9A8A78" data-color="1"></path>
                                 <path fill="#9A8A78" d="M146.451 147.999v5.161H53.548v-5.161h92.903z" data-color="1">
                                 </path>
                             </g>
@@ -223,7 +222,7 @@
                     </div>
                     <div class="footer__about">
                         <span class="footer__text">
-                            © 2022 por rewel reformas residenciais. orgulhosamente criado RicardoS.;
+                            © 2022 por rewel reformas residenciais. orgulhosamente criado Ricardo S
                         </span>
                     </div>
                 </div>
@@ -236,32 +235,32 @@
                         <div class="input__your--name">
                             <div class="input__name">
                                 <label for="name" class="label">Nome</label>
-                                <input type="text" id="name" required>
+                                <input class="input__mobile" type="text" id="name" required>
                             </div>
                             <div class="input__surname">
                                 <label for="sobrenome" class="label">sobrenome</label>
-                                <input type="text" id="sobrenome" required>
+                                <input class="input__mobile" type="text" id="sobrenome" required>
                             </div>
                         </div>
                         <div class="input__email">
                             <label for="email" class="label">Email</label>
-                            <input type="email" class="input__mail" id="email" required>
+                            <input class="input__mobile" type="email" class="input__mail" id="email" required>
                         </div>
                         <div class="input__extra">
                             <div class="input__phone">
                                 <label for="phone" class="label">phone</label>
-                                <input type="number" id="phone" required>
+                                <input class="input__mobile" type="number" id="phone" required>
                             </div>
                             <div class="input__adress">
                                 <label for="adress" class="label">adress</label>
-                                <input type="text" id="adress" required>
+                                <input class="input__mobile" type="text" id="adress" required>
                             </div>
                         </div>
                         <div class="button__submit">
                             <button class="button__send">enviar</button>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
 
             <!---footer Right--->
@@ -284,12 +283,15 @@
                     <div class="footer__link--phone">
                         <a class="footer__link--call" href="tel:(11) 111-7890">ligar</a>
                     </div>
+                    <div class="footer__about--mobile">
+                        <span class="footer__text">
+                            © 2022 por rewel reformas residenciais. orgulhosamente criado Ricardo S
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </footer>
-
-</html>
+</body>
 
 </html>

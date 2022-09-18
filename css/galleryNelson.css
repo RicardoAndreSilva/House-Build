@@ -1,12 +1,14 @@
 .gallery__nelson {
     border-bottom: 1px solid rgb(154, 138, 120);
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .gallery__title {
     font-size: 30px;
     color: rgb(154, 138, 120);
-    margin-top: 28px;
+    margin-top: 50px;
+    padding-top:10px;
     margin-bottom: 28px;
     display: block;
     font-weight: 500;
@@ -67,4 +69,17 @@
 
 .gallery__middle {
     margin-bottom: 40px;
+}
+
+@media screen and (max-width:900px){
+    
+    .gallery__container{
+        grid-template-columns:auto auto;
+    }
+}
+@media screen and (max-width:576px){
+    
+    .gallery__container{
+        grid-template-columns:auto ;
+    }
 }

@@ -2,13 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 650px;
-    
-    
+    border: 1px solid rgb(107, 94, 78);
+    border-top: none;
 
 }
 
 .about__us {
-    border: 1px solid rgb(107, 94, 78);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -44,11 +43,30 @@
 
 .about__logo {
     background-image: url("../assets/img-build_2.webp");
-    border: 1px solid rgb(107, 94, 78);
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
     border-top: none;
     border-left: none;
-    
+
+}
+
+@media screen and (max-width:832px) {
+
+    .about__title {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    .about__subtitle {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .about__text {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }

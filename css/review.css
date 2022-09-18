@@ -64,3 +64,21 @@
 
 
 }
+
+@media screen and (max-width:832px) {
+
+    .review__content {
+        grid-template-columns: auto auto;
+
+    }
+    .review__info{
+        font-size:35px ;
+    }
+    .review__text{
+        margin-top: 10px;
+    }
+    .review__name{
+        margin-bottom: 10px;
+    }
+
+}

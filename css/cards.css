@@ -13,6 +13,7 @@
     object-fit: cover;
     border: 1px solid rgb(107, 94, 78);
     border-right: none;
+    border-bottom: none;
 
 
 }
@@ -23,6 +24,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    border-bottom: none;
 }
 
 .card__title {
@@ -71,4 +73,15 @@
 
 .card__extra:hover {
     background-color: rgb(187, 165, 139);
+}
+
+@media screen and (max-width:832px) {
+
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .card__extra {
+        margin-bottom: 20px;
+    }
 }
