@@ -15,6 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <link rel="stylesheet" href="css/main.scss" />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -27,11 +29,11 @@
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/review.css" />
-  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/social.css" />
   <link rel="stylesheet" href="css/footer.css" />
 </head>
 
-<body>
+<body id="intro">
   <!---header--->
   <header class="header">
     <div class="header__container">
@@ -41,7 +43,12 @@
         <span class="header__info">residenciais</span>
       </div>
       <nav class="nav">
-        <i class="icofont-navigation-menu nav__mobile"></i>
+        <input type="checkbox" class="menu__checkbox">
+        <div class="nav__mobile">
+          <span class="nav__span"></span>
+          <span class="nav__span"></span>
+          <span class="nav__span"></span>
+        </div>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html"> inicío </a>
@@ -58,8 +65,6 @@
           <li class="nav__item nav__item--select">
             <span class="nav__link--span" href="projetos.html"> ligar </span>
           </li>
-        </ul>
-        <ul class="nav__pages">
           <li class="nav__page">
             <a class="nav__link" href="#">
               <img class="nav__img" src="assets/logo_facebook.webp" alt="Icon facebook">
@@ -308,30 +313,37 @@
       </div>
     </section>
 
-    <!--nav-->
-    <div class="nav">
-      <ul class="nav__pages">
-        <li class="nav__page">
-          <a class="nav__link" href="#">
-            <img class="nav__img" src="assets/logo_facebook.webp" alt="Icon facebook">
+    <!--Nav Social-->
+    <div class="social">
+      <ul class="social__pages">
+        <li class="social__page">
+          <a class="social__link" href="#">
+            <img class="social__img" src="assets/logo_facebook.webp" alt="Icon facebook">
           </a>
         </li>
-        <li class="nav__page">
-          <a class="nav__link" href="#">
-            <img class="nav__img" src="assets/logo__instagram.webp" alt="Icon instagram">
+        <li class="social__page">
+          <a class="social__link" href="#">
+            <img class="social__img" src="assets/logo__instagram.webp" alt="Icon instagram">
           </a>
         </li>
-        <li class="nav__page">
-          <a class="nav__link" href="#">
-            <img class="nav__img" src="assets/logo_media.webp" alt="Icon facebook">
+        <li class="social__page">
+          <a class="social__link" href="#">
+            <img class="social__img" src="assets/logo_media.webp" alt="Icon facebook">
           </a>
         </li>
       </ul>
     </div>
+
+    <!--Icon back to top-->
+    <a class="back-to-top" href="#intro" title="back to top">
+      <span class="material-symbols-outlined">
+        keyboard_arrow_up
+      </span>
+    </a>
   </main>
 
   <!--Footer-->
-  <footer id="top__to__back">
+  <footer class="footer" id="top__to__back">
     <div class="footer__container container">
       <div class="footer__content">
         <div class="footer__items">
@@ -414,8 +426,8 @@
             <div class="button__submit">
               <button class="button__send">enviar</button>
             </div>
+          </form>
         </div>
-        </form>
       </div>
 
       <!---footer Right--->
@@ -434,12 +446,13 @@
             <li class="footer__page">
               <a class="footer__link" id="contato" href="#contato">contato</a>
             </li>
+            <li class="footer__page">
+              <button class="footer__link--call" href="tel:(11) 111-7890">ligar</button>
+            </li>
           </ul>
-          <div class="footer__link--phone">
-            <a class="footer__link--call" href="tel:(11) 111-7890">ligar</a>
-          </div>
         </div>
       </div>
+    </div>
     </div>
   </footer>
 </body>

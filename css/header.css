@@ -11,7 +11,6 @@
 
 }
 
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -66,31 +65,38 @@
   .header__title {
     font-size: 40px;
   }
-  .header__description{
+
+  .header__description {
     margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
 
-
-
   .header__container {
     margin-left: 0;
     margin-right: 0;
     max-width: 900px;
     background-color: black;
+    flex-direction: row-reverse;
   }
 
-  .header__description {
-    padding-left: 20px;
+  .header__subtitle {
+    font-size: 20px;
   }
 
-  .header__info {
+.header__info {
     font-size: 14px;
   }
 
   .header__title {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .header__description {
+    display: block;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 14px;
   }
 }

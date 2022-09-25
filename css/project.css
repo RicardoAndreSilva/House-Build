@@ -105,7 +105,7 @@
 
 .project__link:hover {
     opacity: 0.8;
-    
+
 }
 
 .project__link:hover .project__text {
@@ -156,5 +156,28 @@
 
     .project__area {
         grid-template-columns: auto auto;
+    }
+
+    .project__name {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:427px) {
+
+    .project__area {
+        grid-template-columns: auto;
+    }
+
+    .project__gallery {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .project__name {
+        margin-top: 50px;
+        font-size: 25px;
     }
 }

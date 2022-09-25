@@ -65,20 +65,71 @@
 
 }
 
+/*--Responsividade---*/
+
+@media screen and (max-width:1024px) {
+    .review__info {
+        font-size: 30px;
+    }
+
+    .review__text {
+        margin: 10px 10px 0 10px;
+        font-size: 14px;
+    }
+
+    .review__name {
+        margin-bottom: 10px;
+        font-size: 25px;
+        width: 100%;
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width:832px) {
 
     .review__content {
         grid-template-columns: auto auto;
 
     }
-    .review__info{
-        font-size:35px ;
+
+    .review__info {
+        font-size: 30px;
     }
-    .review__text{
+
+    .review__text {
         margin-top: 10px;
     }
-    .review__name{
+
+    .review__name {
         margin-bottom: 10px;
     }
 
+    .review__item {
+        border-bottom: none;
+    }
+
+    .review__item:nth-child(3) {
+        border: 1px solid rgb(107, 94, 78);
+    }
+
+    .review__item:nth-child(4) {
+        border: 1px solid rgb(107, 94, 78);
+        border-left: none;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .review__content {
+        grid-template-columns: auto;
+
+    }
+
+    .review__item {
+        border-left: 1px solid rgb(107, 94, 78);
+    }
+    .review__info{
+        font-size: 25px;
+    }
 }

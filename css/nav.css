@@ -8,9 +8,6 @@
 
 }
 
-.nav__mobile {
-    display: none;
-}
 
 .nav__list {
     display: flex;
@@ -46,7 +43,7 @@
 
 }
 
-.nav__item a {
+.nav__item .nav__link {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 14px;
@@ -58,63 +55,121 @@
 
 }
 
-.nav__pages {
-    display: none;
+
+.menu__checkbox {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+.nav .nav__mobile {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.nav__span {
+    display: block;
+    margin-bottom: 10px;
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.nav .menu__checkbox:checked~.nav__mobile .nav__span {
+    background-color: #232323;
+
+}
+
+.nav .menu__checkbox:checked~.nav__mobile .nav__span:nth-child(1) {
+    transform: rotate(45deg) translate(16px, 5px) scaleX(1.20);
+    transition: all ease 0.4s;
+}
+
+.nav .menu__checkbox:checked~.nav__mobile .nav__span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav .menu__checkbox:checked~.nav__mobile .nav__span:nth-child(3) {
+    transition: all ease 0.4s;
+    transform: rotate(-45deg) translate(16px, -5px) scaleX(1.20);
+}
+
+.nav .menu__checkbox:checked~.nav__list {
+    margin-left: 0;
+}
+
+.nav__page,
+.menu__checkbox,
+.nav__mobile {
+    display: none;
+}
+
+
+/*--Tablet--*/
+@media screen and (max-width:768px) {
+
+    .nav__item--select {
+        display: none;
+    }
+}
+
+/* --other Devices--*/
 @media only screen and (max-width: 600px) {
 
     .nav {
-        display: flex;
-        justify-content: flex-end;
         display: block;
-        z-index: 1;
-
-
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
+    .nav__page,
+    .menu__checkbox,
     .nav__mobile {
         display: block;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        display: flex;
-        margin-bottom: 30px;
-        padding-right: 15px;
-        color: white;
-        font-size: 25px;
-        cursor: pointer;
-
-
     }
+
+
 
     .nav__item--select {
         display: none;
     }
 
     .nav__list {
+        position: absolute;
+        z-index: 998;
+        padding-top: 150px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: calc(100vh - 100px);
+        background-color: white;
+        margin-left: -650px;
+        transition: all ease .2s;
+        display: block;
+        margin-top: 0;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-top: 30px;
-
+        padding-left: 0;
     }
+
+
 
     .nav__item {
-        padding-bottom: 30px;
-        padding-right: 15px;
-    }
-
-    .nav__pages {
-        display: flex;
-        padding-right: 40px;
-        justify-content: flex-end;
-        align-items: flex-end;
-
+        padding-bottom: 50px;
+        cursor: pointer;
+        padding-right: 0;
+        width: 100%;
     }
 
     .nav__page {
@@ -122,15 +177,33 @@
         padding: 5px;
     }
 
-    .nav__link {
+    .nav .nav__link {
         text-decoration: none;
+        color: #000;
+        font-size: 25px;
+        text-transform: capitalize;
+
+    }
+
+    .nav .nav__link:hover {
+        color: #999;
+    }
+
+    .nav__page {
+        padding: 10px;
+
+    }
+
+    .nav__page .nav__link {
+        background-color: #232323;
         display: block;
-        justify-content: flex-end;
+
     }
 }
-@media screen and (max-width:768px){
 
-    .nav__item--select{
+@media screen and (max-width:427px) {
+
+    .nav__social , .nav__pages{
         display: none;
     }
 }

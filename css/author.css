@@ -49,6 +49,28 @@
         grid-template-columns: auto auto;
         
     }
+    .author__items{
+        height:255px;
+    }
+    
+    
+}
+@media  screen and (max-width:600px) {
+
+    .author__area{
+        grid-template-columns: auto;
+        
+    }
+    .author__items{
+        height:255px;
+    }
+    .author__text{
+        font-size: 30px;
+    }
+    .author__name{
+        font-size: 25px;
+        text-align: center;
+    }
     
     
 }

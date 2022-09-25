@@ -4,6 +4,7 @@
     max-height: 665px;
     margin-top: 20px;
     margin-bottom: 50px;
+    gap: 5px;
 }
 
 .footer__content {
@@ -176,12 +177,6 @@ input:active {
 
 }
 
-.footer__link--phone {
-    display: flex;
-    align-items: center;
-
-
-}
 
 .footer__link--call {
     width: 129px;
@@ -189,13 +184,20 @@ input:active {
     color: rgb(38, 38, 38);
     background-color: rgb(154, 138, 120);
     box-shadow: (none, 0 1px 4px rgba(0, 0, 0, .6));
-    display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
+    border: none;
+
+}
+
+.footer__page:nth-child(5) {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
+
+
 }
 
 .footer__about--mobile {
@@ -209,17 +211,51 @@ input:active {
 
 
 /*---Responsive Breakpoint--*/
-@media screen and (max-width:1143px) {
-    .footer__container{
-        grid-template-columns: auto auto;
+@media screen and (max-width:1024px) {
+    .footer__items {
+        max-width: auto;
+    }
+
+    .footer__text {
+        padding-left: 5px;
 
     }
+
+    .footer__name {
+        letter-spacing: 0.05em;
+        color: rgb(154, 138, 120);
+        font-size: 35px;
+        text-transform: capitalize;
+        margin-top: 0;
+
+    }
+
+    .button__send {
+        width: 300px;
+    }
+
+    .input__extra input {
+        width: 150px;
+    }
+
+    .input__mail {
+        width: 320px;
+    }
+
+    .input__your--name input {
+        width: 150px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
 
     .footer__container {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .footer__content:nth-child(3) {
+        display: none;
     }
 }
 
@@ -227,6 +263,27 @@ input:active {
 
     .footer__container {
         grid-template-columns: auto;
+        height: auto;
+    }
+
+    .footer {
+        margin-bottom: 40px;
+    }
+
+    .footer__content:nth-child(3) {
+        display: block;
+    }
+
+    .footer__pages,
+    .footer__link--phone {
+        margin: 0 auto;
+
+    }
+
+    .footer__page,
+    .footer__link--phone {
+        text-align: center;
+        width: 100%;
 
     }
 
@@ -245,7 +302,7 @@ input:active {
     .footer__name {
         text-align: center;
         max-width: 100%;
-        font-size: 26px;
+        font-size: 22px;
 
     }
 
@@ -260,11 +317,8 @@ input:active {
 
     .footer__items {
         margin-top: 10px;
-        width: 100%;
-
-
-
-
+        
+       
     }
 
     .footer__about {
@@ -320,5 +374,13 @@ input:active {
         text-align: center;
     }
 
+    .footer__call {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
 
 }
+

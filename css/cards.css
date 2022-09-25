@@ -56,7 +56,7 @@
     background-color: rgb(154, 138, 120);
     margin-top: 20px;
     box-shadow: rgb(none, 0 1px 4px rgba(0, 0, 0, .6));
-
+   
 }
 
 
@@ -83,5 +83,13 @@
 
     .card__extra {
         margin-bottom: 20px;
+        display: flex;
+        
+    }
+}
+
+@media screen and (max-width:425px) {
+    .card__title {
+        font-size: 30px;
     }
 }

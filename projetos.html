@@ -30,8 +30,7 @@
 </head>
 
 <body id="project__more">
-    <!---header--->
-    <header class="header__service">
+    <header class="header__projects">
         <div class="header__container">
             <div class="header__description">
                 <span class="header__info">newel</span>
@@ -39,7 +38,12 @@
                 <span class="header__info">residenciais</span>
             </div>
             <nav class="nav">
-                <i class="icofont-navigation-menu nav__mobile"></i>
+                <input type="checkbox" class="menu__checkbox">
+                <div class="nav__mobile">
+                    <span class="nav__span"></span>
+                    <span class="nav__span"></span>
+                    <span class="nav__span"></span>
+                </div>
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="index.html"> inicío </a>
@@ -51,10 +55,25 @@
                         <a class="nav__link" href="projetos.html"> projetos </a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="index.html#contato"> contacto </a>
+                        <a href="#top__to__back" class="nav__link"> contacto </a>
                     </li>
                     <li class="nav__item nav__item--select">
                         <span class="nav__link--span" href="projetos.html"> ligar </span>
+                    </li>
+                    <li class="nav__page">
+                        <a class="nav__link" href="#">
+                            <img class="nav__img" src="assets/logo_facebook.webp" alt="Icon facebook">
+                        </a>
+                    </li>
+                    <li class="nav__page">
+                        <a class="nav__link" href="#">
+                            <img class="nav__img" src="assets/logo__instagram.webp" alt="Icon instagram">
+                        </a>
+                    </li>
+                    <li class="nav__page">
+                        <a class="nav__link" href="#">
+                            <img class="nav__img" src="assets/logo_media.webp" alt="Icon facebook">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -389,12 +408,12 @@
                             <a class="footer__link" href="projetos.html">projetos</a>
                         </li>
                         <li class="footer__page">
-                            <a class="footer__link" id="contato" href="index.html#contato">contato</a>
+                            <a class="footer__link" id="contato" href="#contato">contato</a>
+                        </li>
+                        <li class="footer__page">
+                            <button class="footer__link--call" href="tel:(11) 111-7890">ligar</button>
                         </li>
                     </ul>
-                    <div class="footer__link--phone">
-                        <a class="footer__link--call" href="tel:(11) 111-7890">ligar</a>
-                    </div>
                 </div>
             </div>
         </div>
