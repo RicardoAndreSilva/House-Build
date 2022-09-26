@@ -75,11 +75,12 @@
 
     .gallery__container {
         grid-template-columns: auto;
-        gap: 10px;
+        gap: 0px;
     }
 
     .gallery__content {
         width: 100%;
+
 
     }
 
@@ -92,10 +93,14 @@
 
     .gallery__title {
         text-align: center;
+        width: 458px;
+        width: 100%;
     }
 
     .gallery__text {
-        max-width: auto;
+        width: 458px;
+        width: 100%;
+        text-align: center;
     }
 
     .gallery__link {
@@ -106,10 +111,18 @@
         height: 100%;
     }
 
-    .gallery__middle,
-    .gallery__right--right,
     .gallery__left {
-
         margin-bottom: 0;
     }
+
+    .gallery__area {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .gallery__middle,
+    .gallery__right {
+        margin-bottom: 0;
+    }
+
 }

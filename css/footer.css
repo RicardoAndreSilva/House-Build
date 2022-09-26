@@ -265,6 +265,9 @@ input:active {
         grid-template-columns: auto;
         height: auto;
     }
+    .footer__content{
+        margin-bottom: 20px;
+    }
 
     .footer {
         margin-bottom: 40px;
@@ -315,10 +318,11 @@ input:active {
         font-size: 14px;
     }
 
-    .footer__items {
+    .footer__items,
+    .footer__pages {
+        width: 100%;
         margin-top: 10px;
-        
-       
+        display: inline-block;     
     }
 
     .footer__about {
@@ -328,7 +332,7 @@ input:active {
     .footer__page {
         padding-left: 0;
         padding-right: 0;
-        max-width: auto;
+        width: 100%;
     }
 
     .footer__about--mobile {
@@ -341,6 +345,9 @@ input:active {
     .input__extra {
         flex-direction: column;
 
+    }
+    .input__name{
+        margin-right: 0;
     }
 
 

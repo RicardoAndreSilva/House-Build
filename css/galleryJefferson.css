@@ -8,4 +8,7 @@
     .gallery__content {
         width: 100%;
     }
+         .gallery__right--right {
+             margin-top:0;
+         }
 }

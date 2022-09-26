@@ -167,6 +167,7 @@
 
     .project__area {
         grid-template-columns: auto;
+        gap:0;
     }
 
     .project__gallery {
@@ -179,5 +180,10 @@
     .project__name {
         margin-top: 50px;
         font-size: 25px;
+    }
+    .project__left--2,
+    .project__middle--1{
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
