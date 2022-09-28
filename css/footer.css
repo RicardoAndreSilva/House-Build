@@ -259,14 +259,15 @@ input:active {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:588px) {
 
     .footer__container {
-        grid-template-columns: auto;
-        height: auto;
+        grid-template-columns:1fr ;
     }
-    .footer__content{
+
+    .footer__content {
         margin-bottom: 20px;
+        
     }
 
     .footer {
@@ -322,7 +323,7 @@ input:active {
     .footer__pages {
         width: 100%;
         margin-top: 10px;
-        display: inline-block;     
+        display: inline-block;
     }
 
     .footer__about {
@@ -346,7 +347,8 @@ input:active {
         flex-direction: column;
 
     }
-    .input__name{
+
+    .input__name {
         margin-right: 0;
     }
 
@@ -390,4 +392,3 @@ input:active {
 
 
 }
-

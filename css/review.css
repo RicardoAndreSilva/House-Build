@@ -126,10 +126,25 @@
 
     }
 
+    .review__action {
+        text-align: center;
+    }
+    .review__text{
+        width: 100%;
+        display:inline-block;
+    }
+
     .review__item {
         border-left: 1px solid rgb(107, 94, 78);
     }
-    .review__info{
+
+    .review__info {
         font-size: 25px;
     }
+
+    .review__item:nth-child(4) {
+        border: 1px solid rgb(107, 94, 78);
+
+    }
+
 }

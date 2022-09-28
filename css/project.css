@@ -160,10 +160,11 @@
 
     .project__name {
         font-size: 35px;
+        margin-top: 60px;
     }
 }
 
-@media screen and (max-width:427px) {
+@media screen and (max-width:428px) {
 
     .project__area {
         grid-template-columns: auto;
