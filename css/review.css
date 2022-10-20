@@ -123,15 +123,16 @@
 @media screen and (max-width:600px) {
     .review__content {
         grid-template-columns: auto;
-
+        height: auto;
     }
 
     .review__action {
         text-align: center;
     }
-    .review__text{
+
+    .review__text {
         width: 100%;
-        display:inline-block;
+        display: inline-block;
     }
 
     .review__item {
